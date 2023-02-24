@@ -8,10 +8,19 @@ import UserLayout from './layouts/UserLayout';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
 import HomePage from './pages/Home';
+import HistoryPage from './pages/History';
 import OrderPage from './pages/Order';
 import Profile from './pages/Profile';
 
 const router = createBrowserRouter([
+	{
+		path: '/history',
+		element: (
+			<UserLayout defaultSelectedKeys={['history']} breadCrumbs={['Trang chủ', 'Lịch sử']}>
+				<HistoryPage />
+			</UserLayout>
+		),
+	},
 	{
 		path: '/',
 		element: (
@@ -25,7 +34,7 @@ const router = createBrowserRouter([
 		element: (
 			<UserLayout
 				defaultSelectedKeys={['order']}
-				breadCrumbs={['Trang chủ', 'đặt lịch']}>
+				breadCrumbs={['Trang chủ', 'Đặt lịch']}>
 				<OrderPage />
 			</UserLayout>
 		),

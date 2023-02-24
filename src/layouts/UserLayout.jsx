@@ -10,6 +10,7 @@ const LABEL = {
 	ORDER: 'Đặt lịch',
 	SERVICE: 'Dịch vụ',
 	LOGIN: 'Đăng nhập',
+	HISTORY:'Lịch sử'
 };
 
 const UserLayout = ({ children, defaultSelectedKeys, breadCrumbs }) => {
@@ -52,6 +53,10 @@ const UserLayout = ({ children, defaultSelectedKeys, breadCrumbs }) => {
 								{
 									key: 'home',
 									label: LABEL.HOME_PAGE,
+								},
+								{
+									key: 'history',
+									label: LABEL.HISTORY,
 								},
 								{
 									key: 'order',

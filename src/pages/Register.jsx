@@ -23,8 +23,8 @@ const RegisterPage = () => {
 
 	return (
 		<section className='register-page'>
-			<div className='relative min-h-screen bg-gray-200 pt-40'>
-				<div className='text-center text-3xl font-semibold'>
+			<div className='relative min-h-screen bg-gray-200 pt-40 space-y-8'>
+				<div className='text-center text-3xl font-semibold '>
 					Welcome to iLaundry
 				</div>
 				<div className='min-w-lg absolute left-1/2 top-1/2 w-96 max-w-full -translate-x-1/2 -translate-y-1/2 rounded-lg border-2 border-gray-200 bg-white p-4'>
